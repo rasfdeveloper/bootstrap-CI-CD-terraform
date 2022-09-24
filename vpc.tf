@@ -13,7 +13,7 @@ resource "aws_route_table" "route_table1" {
 }
 
 resource "aws_subnet" "my_subnet" {
-  vpc_id            = aws_vpc.my_vpc.id
+  vpc_id            = aws_vpc.vpc_tf.id
   cidr_block        = aws_vpc.vpc_tf.cidr_block
   availability_zone = "sa-east-1a"
 

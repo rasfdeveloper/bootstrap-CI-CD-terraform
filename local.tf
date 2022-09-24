@@ -1,6 +1,6 @@
 locals {
   common_tags = {
-    created_by = data.terraform_user.arn
+    created_by = "terraform"
     created_at = timestamp()
   }
 }
